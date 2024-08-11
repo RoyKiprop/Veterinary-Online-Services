@@ -1,39 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=poppinsbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=poppinsbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="/build/script.js"></script>
-
-</head>
-<body class="bg-[#fffaf6]">
+  </head>
+  <body class="bg-[#fffaf6]">
     <div
-    class="bg-[#ffffff] flex items-center mx-28 p-7 mt-8 rounded-2xl sticky top-8 "
-  >
-    <div>
-      <img class="h-[40px]" src="/build/Images/header.svg" alt="" />
+      class="bg-[#ffffff] flex items-center mx-28 p-7 mt-8 rounded-2xl sticky top-4"
+    >
+      <div>
+        <img class="h-[40px]" src="" alt="" />
+      </div>
+      <div class="md:flex w-full items-center justify-between ml-80">
+        <nav class="flex space-x-12">
+          <a
+            class="text-[#666666] text-[20px] poppins font-medium focus:text-[#f5a322]"
+            href="#home"
+            >Home</a
+          >
+          <a
+            class="text-[#666666] text-[20px] poppins font-medium focus:text-[#f5a322]"
+            href="#services"
+            >Shop</a
+          >
+          <a
+            class="text-[#666666] text-[20px] poppins font-medium focus:text-[#f5a322]"
+            href="#services"
+            >Services</a
+          >
+          <a
+            class="text-[#666666] text-[20px] poppins font-medium focus:text-[#f5a322]"
+            href="#"
+            >About</a
+          >
+          <a
+            class="text-[#666666] text-[20px] poppins font-medium focus:text-[#f5a322]"
+            href="#"
+            >Blog</a
+          >
+        </nav>
+        <a href="contact.html">
+          <button
+            class="bg-[#f77662] p-3 text-white font-semibold rounded-lg text-xl w-40 hover:text-black focus:text-black hover:bg-[#ffc90f] focus:bg-[#ffc90f]"
+          >
+            Contact Us
+          </button>
+        </a>
+      </div>
     </div>
-    <div class=" md:flex w-full items-center justify-between ml-80 ">
-      <nav class="flex space-x-10 ">
-        <a class="text-[#666666] text-[20px] poppins font-medium focus:text-[#f5a322]" href="#home">Home</a>
-        <a class="text-[#666666] text-[20px] poppins font-medium focus:text-[#f5a322]"  href="#services">Shop</a>
-        <a class="text-[#666666] text-[20px] poppins font-medium focus:text-[#f5a322]"  href="#services">Services</a>
-        <a class="text-[#666666] text-[20px] poppins font-medium focus:text-[#f5a322]" href="#">About</a>
-        <a class="text-[#666666] text-[20px] poppins font-medium focus:text-[#f5a322]" href="#">Blog</a>
-      </nav>
-      <a href="#contact">
-        <button class="bg-[#f77662] p-3 text-white rounded-lg text-xl w-40">
-          Contact Us
-        </button>
-      </a>
-     
-    </div>
-    
-</body>
+    <section
+      id="home"
+      class="mt-10 flex flex-col md:flex-row gap-10 items-center mx-5 md:mx-28"
+    >
+      <div class="md:w-[60%]">
+        <h1
+          class="font-bold text-3xl w-[90%] md:text-6xl poppins text-[#2d2624]"
+        >
+          A veterinary you and your little friend can trust
+        </h1>
+        <p class="mt-5 w-[75%] poppins text-2xl text-[#666666]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat a
+          feugiat cursus nisi, vel enim. Non et vitae dictum.
+        </p>
+        <div class="mt-10">
+          <button
+            class="bg-[#f97461] p-5 text-white font-semibold rounded-lg text-xl w-40 hover:text-black focus:text-black hover:bg-[#ffc90f] focus:bg-[#ffc90f]"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+      <div>
+        <img class="h-[650px]" src="/Images/vetHome.png" alt="" />
+      </div>
+    </section>
+    <section class="bg-white mt-10">
+      <div class="mx-28">
+        <h2 class="text-4xl poppins font-bold text-[#2c2524] pt-24">
+          Discover our services
+        </h2>
+        <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
+          <div class="border-2 rounded-3xl flex items-start flex-col gap-5 p-4">
+            <img src="Images/dogPet.svg" alt="" />
+            <h3 class="poppins text-[#000000] font-bold text-[24px]">
+              Walking
+            </h3>
+            <div>
+              <p class="text-[#666666] w-[80%] poppins text-[16px] font-medium">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                eget nisl auctor.
+              </p>
+            </div>
+          </div>
+          <div class="border-2 rounded-3xl flex items-start flex-col gap-5 p-4">
+            <img src="Images/dogPet.svg" alt="" />
+            <h3 class="poppins text-[#000000] font-bold text-[24px]">
+              Walking
+            </h3>
+            <div>
+              <p class="text-[#666666] w-[80%] poppins text-[16px] font-medium">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                eget nisl auctor.
+              </p>
+            </div>
+          </div>
+          <div class="border-2 rounded-3xl flex items-start flex-col gap-5 p-5">
+            <img src="Images/dogPet.svg" alt="" />
+            <h3 class="poppins text-[#000000] font-bold text-[24px]">
+              Walking
+            </h3>
+            <div>
+              <p class="text-[#666666] w-[80%] poppins text-[16px] font-medium">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                eget nisl auctor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center gap-10 mt-12 pb-12">
+          <button
+            class="bg-[#f97461] px-8 py-4 poppins text-white font-semibold rounded-lg text-xl w-42 hover:text-black focus:text-black hover:bg-[#ffc90f] focus:bg-[#ffc90f]"
+          >
+            Contact Us
+          </button>
+          <button
+            class="bg-[#f1f0ee] px-10 py-4 poppins text-black rounded-lg text-xl w-42 hover:bg-gray-200 focus:bg-gray-200"
+          >
+            Browse all services
+          </button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="mx-28 mt-32 flex space-x-10">
+        <div class="w-1/2 h-[600px] rounded-2xl overflow-hidden">
+          <img
+            src="https://images.pexels.com/photos/27505771/pexels-photo-27505771/free-photo-of-hands-holding-a-kitten.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="pet picture"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="flex flex-col space-y-10 w-1/2">
+          <h2 class="text-5xl poppins font-bold text-[#2c2524]">About Us</h2>
+          <p class="poppins w-[75%] text-[#a19c99] text-xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc
+            nulla ut lobortis nibh porttitor. Facilisi arcu, nibh vel risus,
+            morbi pharetra. Facilisi sit mi sed mauris non iaculis elit fusce.
+            Amet nunc in odio molestie lorem mi id a.
+          </p>
+          <div class="flex flex-col space-y-6">
+            <div class="flex space-x-2">
+              <img
+                src="Images/icon.svg"
+                class="rounded-full"
+                alt="check icon"
+              />
+              <p class="text-lg poppins font-bold text-[#2c2524]">
+                Over 10 years of experience
+              </p>
+            </div>
+            <div class="flex space-x-2">
+              <img
+                src="Images/icon.svg"
+                class="rounded-full"
+                alt="check icon"
+              />
+              <p class="text-lg poppins font-bold text-[#2c2524]">
+                20 talented vets ready to help you
+              </p>
+            </div>
+            <div class="flex space-x-2">
+              <img
+                src="Images/icon.svg"
+                class="rounded-full"
+                alt="check icon"
+              />
+              <p class="text-lg poppins font-bold text-[#2c2524]">
+                High-quality products only
+              </p>
+            </div>
+          </div>
+          <div class="mt-5">
+            <button
+              class="bg-[#f97461] px-8 py-4 poppins text-white font-semibold rounded-lg text-xl w-42 hover:text-black focus:text-black hover:bg-[#ffc90f] focus:bg-[#ffc90f]"
+            >
+              More about Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-white mt-12">
+      <div class="container mx-auto flex justify-between px-28">
+        <div>
+          <div class="flex items-center mb-4">
+            <img src="#" alt=" Logo" class="h-12" />
+            <h2 class="text-2xl font-bold text-gray-800 ml-2 poppins">veterinary</h2>
+          </div>
+          <p class="text-gray-500 max-w-xs mb-4 poppins">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec nulla
+            lacus.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="bg-gray-100 p-3 rounded-full">
+              <img
+                src="path/to/facebook-icon.svg"
+                alt="Facebook Icon"
+                class="h-6"
+              />
+            </a>
+            <a href="#" class="bg-gray-100 p-3 rounded-full">
+              <img
+                src="path/to/twitter-icon.svg"
+                alt="Twitter Icon"
+                class="h-6"
+              />
+            </a>
+            <a href="#" class="bg-gray-100 p-3 rounded-full">
+              <img
+                src="path/to/instagram-icon.svg"
+                alt="Instagram Icon"
+                class="h-6"
+              />
+            </a>
+            <a href="#" class="bg-gray-100 p-3 rounded-full">
+              <img
+                src="path/to/linkedin-icon.svg"
+                alt="LinkedIn Icon"
+                class="h-6"
+              />
+            </a>
+          
+            <a href="#" class="bg-gray-100 p-3 rounded-full">
+              <img
+                src="path/to/whatsapp-icon.svg"
+                alt="WhatsApp Icon"
+                class="h-6"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold text-gray-800 mb-4">Pages</h3>
+          <ul class="space-y-2 text-gray-500">
+            <li><a href="#" class="hover:text-gray-800">Home</a></li>
+            <li><a href="#" class="hover:text-gray-800">Shop</a></li>
+            <li><a href="#" class="hover:text-gray-800">Services</a></li>
+            <li><a href="#" class="hover:text-gray-800">About</a></li>
+            <li><a href="#" class="hover:text-gray-800">Blog</a></li>
+            <li><a href="#" class="hover:text-gray-800">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
